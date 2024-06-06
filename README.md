@@ -2,6 +2,31 @@
 
 #### MERN Stack + typescript based app to utilize your skills and showcase your talent
 
+
+# Screenshots
+### Login Page
+<img alt="login" src="./src/assets/login.png">
+
+### Sign-Up Page
+<img alt="login" src="./src/assets/signup.png">
+
+### Dashboard
+<img alt="login" src="./src/assets/dashboard.png">
+
+### Select Test Page
+<img alt="login" src="./src/assets/select-test.png">
+
+### Test Page
+<img alt="login" src="./src/assets/test-page.png">
+
+### Display Result
+<img alt="login" src="./src/assets/result-page.png">
+
+### Result updated in Dashboard
+<img alt="login" src="./src/assets/dashboard-2.png">
+
+
+
 ## Installation
 
 You can run this app for testing and devlopment by running the following in your terminal
@@ -9,17 +34,16 @@ You can run this app for testing and devlopment by running the following in your
 Make sure you have Nodejs install and version above v18.17.0
 
 ```bash
-git clone https://github.com/ptech12/skillz-mern
+git clone https://github.com/ptech12/skillz
 ```
 
 change to project directory and install dependencies
 
 ```bash
-cd skillz-mern
+cd skillz
 ```
-Run the following to install dependencies for both client & backend
 ```bash
-npm run installc && npm run installb
+npm install
 ```
 
 Create the Environment Variable file and update the contents
@@ -32,13 +56,8 @@ Open the .env in a editor and add the backend-server URL
 ```bash
 VITE_API_URL=
 ```
-Start the client 
+Start the server 
 
 ```bash
-cd client && npm run dev
-```
-Start the server in new terminal 
-
-```bash
-cd backend && npm run dev
+npm run dev
 ```
