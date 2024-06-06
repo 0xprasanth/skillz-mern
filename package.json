@@ -1,0 +1,16 @@
+{
+  "name": "skillz-mern",
+  "version": "1.0.0",
+  "description": "install node_modules for Project",
+  "main": "index.js",
+  "scripts": {
+    "installc": "cd client && npm i",
+    "installb": "cd backend && npm i"
+  },
+  "repository": {
+    "type": "git",
+    "url": "github.com/ptech12/skillz-mern"
+  },
+  "author": "ptech12",
+  "license": "ISC"
+}
