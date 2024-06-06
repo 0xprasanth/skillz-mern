@@ -4,15 +4,12 @@ import {
   ResizablePanelGroup,
 } from "@/components/ui/resizable";
 import About from "./About";
-
-import { useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { fetchUserInfo } from "@/apis";
 import SkillCard from "./SkillCard";
 import { ScrollArea } from "@/components/ui/scroll-area";
 
 export function UserInfo() {
-  const navigate = useNavigate();
   const [userObject, setUserObject] = useState<any>({});
   const [windowSize, setWindowSize] = useState(0);
 

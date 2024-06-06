@@ -70,7 +70,11 @@ const QuizNext = ({ topic }: { topic: string | undefined }) => {
         userId
       );
 
-      toast.success(resp?.message, {
+      console.log(resp);
+      
+      
+      
+      toast.success("success", {
         "position": "top-right"
       })
       navigate('/dashboard')

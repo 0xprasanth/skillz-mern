@@ -66,6 +66,7 @@ const QuizNode = ({ topic }: { topic: string | undefined }) => {
     const accessToken = Cookies.get("token");
     const userId = Cookies.get("userId");
     try {
+      //@ts-ignore
       const resp = await submitScore(
         accessToken,
         Math.floor((score / data.length) * 100),
@@ -73,7 +74,8 @@ const QuizNode = ({ topic }: { topic: string | undefined }) => {
         userId
       );
 
-      toast.success(resp?.message, {
+
+      toast.success("success", {
         "position": "top-right"
       })
       navigate('/dashboard')

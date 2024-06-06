@@ -1,20 +1,8 @@
 import Container from "@/layouts/Container";
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { useParams } from "react-router-dom";
 import { Progress } from "@/components/ui/progress";
 import { Button } from "@/components/ui/button";
-
-import { Label } from "@/components/ui/label";
-import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
-
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
 
 import QuizNode from "@/components/Quiz/Node/QuizNode";
 
@@ -23,37 +11,7 @@ import QuizNext from "@/components/Quiz/Nextjs/QuizNext";
 
 const TestPage: React.FC = () => {
   const { topic } = useParams();
-  // const [questionData, setQuestionData] = useState<{ [key: string]: any }>();
-  // const [questionCount, setQuestionCount] = useState<number>(1);
-  // const [currentQuestion, setCurrentQuestion] = useState(1);
-  // const [selected, setSelected] = useState("");
-  // const [answers, setAnswers] = useState([""]);
 
-  // const [score, setScore] = useState(0);
-  // // useEffect hook to assign question to JSON
-  // useEffect(() => {
-  //   // console.log(Questions);
-  //   if (topic === "node.js") {
-  //     setQuestionData(() => '');
-  //   }
-  // }, []);
-  // useEffect(() => {
-  //   // console.log((((questionCount * questionData?.length) / 100) * 100) / 2);
-  //   // console.log(currentQuestion);
-  // });
-
-  // const handleAnswer = (e: any) => {
-  //   console.log(e);
-  //   setSelected(e.target);
-  // };
-
-  // useEffect(() => {
-  //   setCurrentQuestion(() => questionCount);
-
-  //   if (questionCount === questionData?.length) {
-  //     console.log("calc score");
-  //   }
-  // }, []);
 
   return (
     <Container place={`TEST`} topic={topic}>

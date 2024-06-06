@@ -1,4 +1,3 @@
-import React from "react";
 
 import propic from "@/assets/gk1.jpg";
 
