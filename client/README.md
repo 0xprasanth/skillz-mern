@@ -2,6 +2,31 @@
 
 #### MERN Stack + typescript based app to utilize your skills and showcase your talent
 
+
+# Screenshots
+### Login Page
+<img alt="login" src="./src/assets/login.png">
+
+### Sign-Up Page
+<img alt="login" src="./src/assets/signup.png">
+
+### Dashboard
+<img alt="login" src="./src/assets/dashboard.png">
+
+### Select Test Page
+<img alt="login" src="./src/assets/select-test.png">
+
+### Test Page
+<img alt="login" src="./src/assets/test-page.png">
+
+### Display Result
+<img alt="login" src="./src/assets/result-page.png">
+
+### Result updated in Dashboard
+<img alt="login" src="./src/assets/dashboard-2.png">
+
+
+
 ## Installation
 
 You can run this app for testing and devlopment by running the following in your terminal
