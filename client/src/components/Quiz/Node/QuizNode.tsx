@@ -16,6 +16,8 @@ const QuizNode = ({ topic }: { topic: string | undefined }) => {
   let Option1 = useRef<HTMLLIElement>(null);
   let Option2 = useRef<HTMLLIElement>(null);
   let Option3 = useRef<HTMLLIElement>(null);
+  const navigate = useNavigate();
+
   let Option4 = useRef<HTMLLIElement>(null);
 
   let option_array = [Option1, Option2, Option3, Option4];
@@ -63,7 +65,6 @@ const QuizNode = ({ topic }: { topic: string | undefined }) => {
     console.log(import.meta.env.VITE_API_URL);
     const accessToken = Cookies.get("token");
     const userId = Cookies.get("userId");
-    const navigate = useNavigate();
     try {
       const resp = await submitScore(
         accessToken,
