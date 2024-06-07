@@ -9,6 +9,9 @@ export type QuestionType = {
     answer: number;
 }
 
+export type LoginPageProps = {
+    message?: string
+}
 
 export type UserObjectType = {
     __v: number,

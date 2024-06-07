@@ -9,13 +9,14 @@ import {
 } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import useAuth from "@/hooks/useAuth";
 import { useNavigate, Link } from "react-router-dom";
 import { toast } from "sonner";
 import { GitHubLogoIcon } from "@radix-ui/react-icons";
+import { LoginPageProps } from "@/types";
 
-const LoginPage: React.FC = () => {
+const LoginPage = ({ message }: LoginPageProps) => {
   const { login } = useAuth();
 
   const navigate = useNavigate();
@@ -24,6 +25,14 @@ const LoginPage: React.FC = () => {
     email: "",
     password: "",
   });
+
+  useEffect(() => {
+    if(message){
+      toast.warning(message, {
+        position: 'top-right'
+      })
+    }
+  })
 
   const handleChange =
     (prop: string) => (e: React.ChangeEvent<HTMLInputElement>) => {
