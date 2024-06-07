@@ -38,11 +38,11 @@ const Router = () => {
     },
     {
       path: '/take-test',
-      element: <TakeTestPage />
+      element: isLoggedIn ? <TakeTestPage /> : <Navigate to='/login' />
     },
     {
       path: '/take-test/:topic',
-      element: <TestPage />
+      element: isLoggedIn ? <TestPage /> : <Navigate to='/login' />
     }
   ]);
 };
