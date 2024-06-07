@@ -21,7 +21,7 @@ const Router = () => {
       element: isLoggedIn ? (
         <Navigate to="/dashboard" replace />
       ) : (
-        <LoginPage />
+        <LoginPage message='Please login to continue' />
       ),
     },
     {
